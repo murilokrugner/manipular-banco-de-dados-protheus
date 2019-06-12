@@ -49,3 +49,8 @@ Arquivo criado! substitua o arquivo existente do seu projeto, com o novo arquivo
 
 - **a)** - Indico fortemente que você **não** migre as tabelas nativas do Django no banco de dados SQL existente, pois é muito 
            provável que de algum conflito, e você não quer ter essa dor de cabeça de graça né? rs
+           
+- **b)** - Se você quer permitir que o Django gerencie o ciclo de vida das tabelas, é necessário alterar a opção managed para True                  (ou simplesmente removê-la porque True é o valor padrão).
+
+- **c)** - Para resolver o problema de criarmos as tabelas do Django acidentalmente no banco existente, vamos conectar dois bancos
+           de dados 
