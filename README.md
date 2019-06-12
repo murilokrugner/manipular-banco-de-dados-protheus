@@ -2,6 +2,8 @@
 
 ## Nesse repositório vós ensinareis a conectar o banco de dados SQL Server, do sistema ERP Protheus no seu projeto Django.
 
+**Inicie seu ambiente virtual anaconda ou virtualenv para começar :)
+
 ### 1) - Instalando dependências
 
 - **a)** - Primero precisamos instalar o ODBC com o comando abaixo:
@@ -29,7 +31,7 @@ Pronto! db conectado! agora precisamos migrar as tabelas existentes para os noss
 
 ### 3) - Migrando as tabelas existentes
 
-- **a)** - Vamos usar o comando abaixo para migrar as tabelas, pois o Django vem com uma ferramenta chamada inspectdb que pode criar os              modelos introspectando o banco de dados existente. Você pode verificar a saida rodando este comando:
+- **a)** - Vamos usar o comando abaixo para migrar as tabelas, pois o Django vem com uma ferramenta chamada inspectdb que pode criar os            modelos introspectando o banco de dados existente. Você pode verificar a saida rodando este comando:
 
 `python manage.py inspectdb`
 
@@ -42,3 +44,8 @@ Pronto! tabelas migradas!
 `python manage.py inspectdb > models.py`
 
 Arquivo criado! substitua o arquivo existente do seu projeto, com o novo arquivo **models.py**
+
+### 4) - Orientações
+
+- **a)** - Indico fortemente que você **não** migre as tabelas nativas do Django no banco de dados SQL existente, pois é muito 
+           provável que de algum conflito, e você não quer ter essa dor de cabeça de graça né? rs
