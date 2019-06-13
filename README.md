@@ -54,3 +54,10 @@ Arquivo criado! substitua o arquivo existente do seu projeto, com o novo arquivo
 
 - **c)** - Para resolver o problema de criarmos as tabelas do Django acidentalmente no banco existente, vamos conectar dois bancos
            de dados 
+           
+### 5) - Resultado
+
+- **a)** Seu models.py irão ficar mais o menos assim:
+
+![models](https://github.com/murilokrugner/manipular-banco-de-dados-protheus/blob/master/sc7010.jpg)
+
