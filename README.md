@@ -1,5 +1,7 @@
 # Conectando banco de dados SQL Server no Django 2x e Python 3x
 
+![Logo Django](https://github.com/murilokrugner/manipular-banco-de-dados-protheus/blob/master/django-logo.jpg)
+
 ## Nesse repositório vós ensinareis a conectar o banco de dados SQL Server, do sistema ERP Protheus no seu projeto Django.
 
 **Inicie seu ambiente virtual anaconda ou virtualenv para começar :)
