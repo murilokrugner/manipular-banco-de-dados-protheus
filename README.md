@@ -66,11 +66,12 @@ Arquivo criado! substitua o arquivo existente do seu projeto, com o novo arquivo
 - **b)** - Por padrão, o inspectdb cria modelos não gerenciáveis. Quer dizer, managed = False na Meta classe do modelo, diz ao Django              para não gerenciar a criação, modificação e deleção de cada tabela.
            Se você quer permitir que o Django gerencie o ciclo de vida das tabelas, é necessário alterar a opção managed acima para True            ( ou simplesmente removê-la porque True é o valor padrão)
           
+    **exemplo:**
            ```class Person(models.Model):
               id = models.IntegerField(primary_key=True)
               first_name = models.CharField(max_length=70)
               class Meta:
-                  **managed = False**
+                  managed = False
                   db_table = 'CENSUS_PERSONS'
            ```
                
